@@ -1,0 +1,81 @@
+@media(max-width:900px){
+    .conteudo img{
+        width: 300px;
+    }
+}
+
+@media(max-width: 700px){
+    .projetos div{
+        max-height: 150px;
+        max-width: 150px;
+    }
+
+    .conteudo img{
+        width: 250px;
+    }
+}
+
+@media(max-width: 500px){
+    .projetos div{
+        max-height: 100px;
+        max-width: 100px;
+        border-radius: 10px;
+        margin: 5px;
+    }
+
+    *{
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .conteudo img{
+        width: 200px;
+    }
+}
+
+@media(max-width: 450px){
+    .projetos div{
+        max-height: 80px;
+        max-width: 80px;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .conteudo img{
+        width: 150px;
+    }
+
+    .cabecalho{
+        padding: 10px 0 10px 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo{
+        padding-top: 15px;
+    }
+
+    #sobre, #habilidades, #projetos{
+        padding-top: 120px;
+    }
+
+}
+
+@media(max-width: 350px){
+
+    .conteudo img{
+        width: 100px;
+    }
+
+    .container{
+        width: 100vw;
+    }
+}
+
+@media(max-width: 280px){
+    .cabecalho{
+        position: fixed;
+        top: 0;
+    }
+}

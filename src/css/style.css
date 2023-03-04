@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+.cabecalho{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: auto;
+    top: 0;
+    background-color: white;
+    border-bottom: 3px solid blue;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.logo, .menu{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 50vw;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    display: flex;
+    position: relative;
+    padding: 5px;
+}
+
+nav a::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .5s ease-in-out;
+}
+
+nav a:hover::after{
+    width: 25%;
+}
+
+.container{
+    background-color: rgb(214, 255, 255);
+    text-align: center;
+    width: 90%;
+}
+
+#sobre, #habilidades, #projetos{
+    padding-top: 180px;
+}
+
+.conteudo{
+    display: flex;
+    height: 80vh;
+    margin: 20px;
+    justify-content: space-around;
+    text-align: justify;
+    align-items: center;
+}
+
+.conteudo img, p{
+    width: 400px;
+    padding: 10px;
+}
+
+#ocultar{
+    width: 50px;
+    height: 20px;
+}
+
+.projects{
+    margin-bottom: 100px;
+}
+
+.projetos{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.projetos div{
+    display: flex;
+    margin: 20px;
+    width:200px;
+    height:200px;
+    background-color: white;
+    border-radius: 10px;
+    border:1px solid black;
+    color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.projetos-ocultos{
+    display: none;
+}
+
+footer{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-top: 3px solid blue;
+    width: 100%;
+    height: auto;
+    padding: 20px 0 20px 0;
+}
+
+.contatos ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contatos img{
+    width: 30px;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: aqua;
+    border: 5px solid rgb(214, 255, 255);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: aqua;
+    border-radius: 6px;
+    border: 2px solid rgb(214, 255, 255);
+}
